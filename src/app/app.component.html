@@ -1,0 +1,171 @@
+<div class="container">
+
+  <section class="header">
+    <div class="navbar">
+      <div class="logo">
+        <img src="../assets/logo.png" alt="">
+      </div>
+
+      <div class="navlinks">
+        <ul>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#" id="login">Login</a></li>
+          <li><a href="#" id="getstarted">Get Started</a></li>
+        </ul>
+      </div>
+
+      <img class="big" src="../assets/circle.png" alt="">
+
+    </div>
+  </section>
+
+  <section class="row">
+    <div class="col-1">
+      <div class="content">
+        <h3 class="heading">We make it Super<br>Simple</h3>
+        <img src="../assets/collect_img-video.png" alt="">
+      </div>
+      <div class="blob">
+        <img src="../assets/blob-small.png" alt="">
+      </div>
+      <div class="dots">
+        <img src="../assets/accounting_dots.png" alt="">
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="criteria">
+        <h4 style="text-align:center;margin-bottom: 20px;padding:25px;font-weight: 300;">Eligibility Criteria</h4>
+        <div class="income">
+          <h4 style="margin-bottom:10px">Monthly Income</h4>
+          <span style="font-weight: 600;display: block;margin-bottom:20px">&#8377;{{rang}}</span>
+          <div class="field">
+            <div class="value left"><span style="font-weight: 600;">&#8377;</span>100000</div>
+            <input class="range" type="range" min="100000" max="300000" #ref [value]="rang" (input)="binder($event)">
+            <div class="value right"><span style="font-weight: 600;">&#8377;</span>300000</div>
+          </div>                    
+
+
+        </div>
+        <div class="income">
+          <h4>Monthly Expense</h4>
+          <span style="font-weight: 600;display: block;">&#8377;{{exp}}</span>
+          <input class="income-range" type="range" min="0" max="300000" [value]="exp" (input)="expense($event)">
+        </div>
+        <div class="income">
+          <h4>Repayment Tenure</h4>
+          <select name="" id="" style="border:none;border-bottom: 1px solid gray; display: block;width:100%">
+            <option value="3">3 Months</option>
+            <option value="6">6 Months</option>
+            <option value="9">9 Months</option>
+            <option value="12">12 Months</option>
+          </select>
+
+        </div>
+        <div class="box-1 income">
+          <p style="display: inline-block;margin-right: 50px;font-size:14px; ">Do you have any existing loans?</p>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+
+        </div>
+        <div class="income">
+          <h4>EMI of existing loan(<small>optional</small>) </h4>
+
+          <span style="font-weight: 600">&#8377;</span><input type="text" name="" id="" placeholder=""
+            style="border:none;border-bottom: 1px solid gray;;">
+        </div>
+      </div>
+
+      <div class="amount">
+        <div class="display">
+          <div class="text">
+            <h4>Loan Amount</h4>
+            <p><span style="font-weight: 600;">&#8377;</span>&nbsp;{{num}}</p>
+          </div>
+          <div class="text">
+            <h4>Your EMI will be </h4>
+            <p> <span style="font-weight: 600;">&#8377;</span>&nbsp;{{loan}}</p>
+          </div>
+          <div class="link">
+            <a href="#">Get Money</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <div class="col2dots">
+      <img src="../assets/accounting_dots.png" alt="">
+    </div>
+
+  </section>
+
+
+  <div class="services">
+    <div class="services-col-1">
+      <div class="card-1">
+        <div class="card">
+          <div class="icon">
+            <img src="../assets/Get Paid Instantly.png" alt="">
+            <h3>Quick cash Disbursement</h3>
+            <p>get terms gains that your business needs<br>within 72 hrs</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <img src="../assets/Low interest rate.png" alt="">
+            <h3>Low-interest rate</h3>
+            <p>Achieve your financial goals with an<br>amazing interst rates starting at13% per annum.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <img src="../assets/Secure Payments.png" alt="">
+            <h3>Zero Paperwork</h3>
+            <p>Get started Instantly by submiting only<br>your basic details and bank statements</p>
+          </div>
+        </div>
+      </div>
+      <div class="card-2">
+        <div class="card">
+          <div class="icon">
+            <img src="../assets/freelancer_feature_icon_6@1.5x.png" alt="">
+            <h3>Ace your business finances</h3>
+            <p>Manage banking accounting & everything<br>in between, on one platform</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="icon">
+            <img src="../assets/Covid.png" alt="">
+            <h3>Loans to fight Covid-19</h3>
+            <p>Zero EMI for first 3 months on Back-to-Business loans of upto 1 lakh.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services-col-2">
+      <div class="boost">
+        <p class="title">Boost your Business<br>with Open
+        </p>
+      </div>
+      <div class="exp">
+        <p> Get your hands on a term loan that's<br>crafted for your business.</p>
+      </div>
+
+      <a href="#" class="getacc">Get an Open Account</a>
+
+
+
+
+
+    </div>
+
+
+
+
+  </div>
+
+</div>
